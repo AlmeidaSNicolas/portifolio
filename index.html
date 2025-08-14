@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Almeida - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!--Nav bar-->
+    <ul>
+        <li><button id="tema" onclick="alternarTema()" class="botao"  >Alternar Tema</button></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#Projetos">Projetos</a></li>
+        <li><a href="#Linguagens">Linguagens</a></li>
+
+    </ul>
+
+<!--Primeira sessao - Sobre Mim-->
+    <section id="sobre" >
+        <h1>Nicolas Almeida</h1>
+        <h3>Estudando de Engenharia de Software no momento foco mais em tecnologias frontend
+            mas visando sempre me tornar um Engenheiro completo.
+
+            Minhas Redes:
+            <a href="https://www.linkedin.com/in/nicolas-almeida-" target="_blank">Linkedin</a>
+            <a href="https://www.instagram.com/ui_eons" target="_blank">Instagram</a>
+        </h3>
+    </section>
+<!--fim da primeira section-->
+
+
+<!--Segunda section PROJETOS-->
+    <section id="Projetos" >
+        <h1>Deixo abaixo alguns projetos que ja Desenvolvi juntamente com suas definições</h1>
+
+        <h2>Save the Animals</h2>
+        <p>Projeto idealizado por mim como um trabalho para minha faculdade, com o intuito de apoiar alguma causa da sua vizinhança.
+            
+            As tecnologias utilizadas foram: HTML, CSS, para frontend JAVASCRPIT, NODEJS, EXPRESS, SQLITE3 para requisições e armazenamento de dados de doação.
+
+        </p>
+        <hr>
+        <h4>Demonstração do Projeto</h4>
+
+        <div class="savetheanimals">
+            <img src="/assets/imagens/Save-theanimals-1.PNG" alt="Pagina principal do projeto" onclick="expandirImagem(this)" >
+
+            <img src="/assets/imagens/Save-theanimals-2.PNG" alt="Tela de doação do projeto"   onclick="expandirImagem(this)" >
+
+            <img src="/assets/imagens/Save-theanimals-3.PNG" alt="Demonstração da tag IFRAME"  onclick="expandirImagem(this)" >
+
+            <img src="/assets/imagens/conexãodb.PNG" alt="banco de dados funcional" onclick="expandirImagem(this)" >
+        </div>
+
+
+        <h2>HubDesk</h2>
+
+        <p>HubDesk é uma aplicação web corporativa desenvolvida para 
+            organizar, compartilhar e gerenciar arquivos de forma eficiente, 
+            simples e colaborativa. Pensada como uma alternativa mais leve e controlada a soluções como o Google Drive, 
+            com foco em acessibilidade e permissões personalizadas.
+        </p>
+
+        <p>🛠 Tecnologias Utilizadas
+        Front-end:
+        HTML/CSS/JavaScript (em desenvolvimento inicial)
+        Futuro: React
+        Back-end:
+        Node.js com Express
+        Autenticação com JWT ou sessões
+        Upload de arquivos com Multer
+        Banco de Dados:
+        PostgreSQL
+        Outras Bibliotecas:
+        jsPDF ou html2pdf.js (para exportação PDF)
+        </p>
+
+         <div class="savetheanimals">
+            <img src="/assets/imagens/hubdesk1.PNG" alt="Pagina principal do projeto" onclick="expandirImagem(this)" >
+
+            <img src="/assets/imagens/hubdesk2.PNG" alt="Demonstração do ambiente de PASTAS" onclick="expandirImagem(this)" >
+
+            <img src="/assets/imagens/hubdeskcode.PNG" alt="Demonstração do codigo da page para futuros aprimoramentos" onclick="expandirImagem(this)"  > 
+        </div>
+
+
+    </section>
+    <!--Fim da Segunda Section-->
+
+
+    <!--Terceira Section "Linguagens"-->
+
+    <section id="Linguagens">
+        <h1>Linguagens </h1>
+
+        <div class="">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"   />
+
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
+          
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript" />
+          
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="typescript" />
+          
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" />
+          
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git" />
+          
+            
+        </div>
+
+    </section>
+
+
+    
+
+    <footer class="rodape" >
+        &copy; 2025. Todos os direitos Reservados
+        <br>
+        <p> Pensado e codado por <a href="https://github.com/AlmeidaSNicolas" target="_blank" >Nicolas </a></p>
+    </footer>  
+
+
+
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

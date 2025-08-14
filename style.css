@@ -1,0 +1,236 @@
+/* 🎨 Variáveis de cor - Tema Claro */
+:root {
+    --bg-body: #ffffff;
+    --text-color: #000000;
+    --bg-navbar: #2c3e50;
+    --link-color: #ecf0f1;
+    --link-hover: #e74c3c;
+    --bg-section: #ffffff;
+    --section-text: #2c3e50;
+    --paragraph-color: #555;
+    --border-color: #ddd;
+    --shadow-color: rgba(0,0,0,0.1);
+}
+
+/* 🎨 Variáveis de cor - Tema Escuro */
+body.dark-mode {
+    --bg-body: #121212;
+    --text-color: #ffffff;
+    --bg-navbar: #1c1c1c;
+    --link-color: #e0e0e0;
+    --link-hover: #ff6b6b;
+    --bg-section: #1e1e1e;
+    --section-text: #ffffff;
+    --paragraph-color: #d3d3d3;
+    --border-color: #444;
+    --shadow-color: rgba(255,255,255,0.05);
+}
+
+.botao {
+    background: none;
+    border: none;
+    color: var(--link-color);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+.botao:hover {
+    color: var(--link-hover);
+}
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-body);
+    color: var(--text-color);
+}
+
+/* Navbar */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-navbar);
+    padding: 15px 0;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: var(--link-hover);
+}
+
+
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--bg-section);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+/* Primeira sessão */
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--section-text);
+}
+
+section h3 {
+    font-size: 1.2rem;
+    color: var(--paragraph-color);
+}
+
+/* Segunda sessão - Projetos */
+#Projetos h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#Projetos h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--section-text);
+}
+
+#Projetos p {
+    margin: 10px 0 20px 0;
+    color: var(--paragraph-color);
+    line-height: 1.5;
+}
+
+#Projetos hr {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+#Projetos h4 {
+    margin-bottom: 15px;
+    color: var(--section-text);
+}
+
+/* Galeria de imagens do projeto */
+.savetheanimals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.savetheanimals img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+.savetheanimals img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+/* Linguagens */
+#Linguagens div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#Linguagens div img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+#Linguagens div img:hover {
+    transform: scale(1.1);
+}
+
+
+.rodape {
+  margin-top: auto;
+  background: var(--cor-escura);
+  color: var(--cor-clara);
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 0.9rem;
+}
+
+.rodape a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rodape a:hover,
+.rodape a:focus {
+  text-decoration: underline;
+}
+
+.projeto img {
+    width: 100px; /* ou o tamanho que você quer */
+    height: auto;
+    transition: all 0.5s ease;
+    cursor: none;
+}
+
+/* Estado expandido */
+img.expandida {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* largura quando expandida */
+    max-width: 800px; /* limite máximo */
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .savetheanimals img {
+        max-width: 80%;
+    }
+}
